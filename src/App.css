@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500&family=Open+Sans&display=swap');
+.App {
+  text-align: center;
+  min-height: 100vh;
+  
+}
+*{
+  font-family: 'Nunito', sans-serif;
+}
+:root {
+  --background-primary: #02B290;
+  --background-secondary: #3945a7;
+  --background-dark: #0c0d0f;
+  --color-light:#f4f9fd;
+}
+/* nav style  */
+
+.link {
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--color-light);
+}
+.logo { 
+  box-shadow: 2px 2px 5px var(--background-secondary);
+  font-size: 40px;
+  font-weight: 700;
+   padding: 10px;
+}
+.logo img{
+  height: 50px;
+}
+/* banner style  */
+.main-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(./images/banner.jpg) center / cover no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.booking-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/booking-bg.jpg) center / cover no-repeat;
+  height: 50vh;
+}
+.banner-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  color: var(--color-light);
+}
+.banner-heading h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: var(--color-light);
+  letter-spacing: 12px;
+}
+.banner-heading p {
+  font-size: 17px; 
+  letter-spacing: 5px;
+}
+
+/* package component style  */
+.package-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+   background-color: var(--color-light);
+  padding: 40px 0 20px 0;
+}
+
+#accent-btn{
+  background-color: var(--color-light);
+  padding: 2px 10px;
+  border: 0;
+  border-radius: 3px;
+}
+.package-container h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+}
+.package-container{
+  color: var(--color-light);
+  line-height: 35px;
+  letter-spacing: 1px;
+   
+}
+.packageCard{ 
+  transition: 0.5s ease;
+}
+.packageCard :hover{
+   box-shadow: 10px 10px 50px black; 
+   
+}
+span {
+  font-size: 20px !important;
+   
+}
+/* title container  */
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  
+}
+.title h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--background-secondary);
+}
+.title h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--background-primary);
+}
+/* service style  */
+
+.service-container{
+  width: 100%px;
+  height: 450px;
+  
+  position: relative;
+  overflow: hidden;
+}
+.service-container img{
+  width: 100%;
+  height: 100%;
+}
+.service-details{
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.6);
+  color: var(--color-light);
+  top:-100%;
+  width:100%;
+  height:100%;
+  padding: 20px;
+  transition: 0.5s;
+}
+.lernmore-btn{
+  position: absolute;
+  top: -100;
+  left:0;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.6); 
+}
+.lernmore-btn a{
+  color: var(--color-light);
+  font-size: 20px;
+  text-decoration: none;
+}
+.service-container:hover .service-details {
+  top: 0;
+}
+.service-container:hover .lernmore-btn{
+  bottom: 0;
+  
+}
+
+
+
+.footer-component{
+  background-color: #120E43;
+}
+.footer-component h4{
+   color: rgb(112, 112, 112);
+}
+.copywright{
+  color: rgb(112, 112, 112);
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+ 
+}
+.footer-link a:hover {
+  color: var(--background-primary);
+}
+
+.main-btn {
+  background-color: var(--background-secondary) !important;
+  border: none;
+}
+ 
+.about-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/about-banner.jpg) center / cover no-repeat;
+  background-attachment: fixed;
+}
+.about-message {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}  
+.about-message h2{
+  font-size: 50px;
+  font-weight: 700; 
+  letter-spacing: 5px;
+}
+.about-message p{ 
+  letter-spacing: 3px;
+}
+.childcare-details {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  background-color: gainsboro;
+  padding: 5px;
+  font-size: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.booking-heading {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.herding-text {
+  border: 3px solid white;
+  padding: 10px 20px;
+  background-color: #0fb78757;
+  transition: 0.5s ease-in-out;
+}
+.herding-text:hover {
+  background-color: transparent;
+}
+
+.nav-bg {
+  background-color: var(--background-primary);
+}
+.package-from  input{
+  margin: 10px 0;
+  padding: 10px;
+}
